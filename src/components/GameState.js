@@ -47,6 +47,7 @@ const GameState = () => {
       )}
       {!gameOver && (
         <GamePieces
+          data-testid="game-pieces"
           score={score}
           setScore={setScore}
           onGameOver={(type) => handleGameOver(type)}
